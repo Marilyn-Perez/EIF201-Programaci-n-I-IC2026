@@ -1,0 +1,3 @@
+﻿  procesamiento.cpp
+C:\Users\marip\EIF201-Programaci-n-I-IC2026\sesion02\Ejercicio04-Procesamiento de nombre\procesamiento.cpp(78,33): warning C4267: 'return': conversión de 'size_t' a 'int'; posible pérdida de datos
+  Ejercicio04-Procesamiento de nombre.vcxproj -> C:\Users\marip\EIF201-Programaci-n-I-IC2026\sesion02\Ejercicio04-Procesamiento de nombre\x64\Debug\Ejercicio04-Procesamiento de nombre.exe
