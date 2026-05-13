@@ -59,23 +59,54 @@ namespace EIF201 {
 		if (cola == nullptr) {
 			return false;
 		}
+
 		NodoLocutor* cabeza = getCabeza();
 		NodoLocutor* actual = cabeza;
+
 		do {
 
 			if (actual->nombre == referencia) {
+
 				NodoLocutor* nuevo = new NodoLocutor(nuevo_nombre);
+
 				nuevo->siguiente = actual->siguiente;
 				actual->siguiente = nuevo;
+
 				if (actual == cola) {
 					cola = nuevo;
-					cantidad++;
-					return true;
 				}
-				actual = actual->siguiente;
-			} while (actual != cabeza);
+
+				cantidad++;
+				return true;
+			}
+
+			actual = actual->siguiente;
+
+		} while (actual != cabeza);
+
+		return false;
+	}
+
+	bool RotacionCircular::existeLocutor(const std::string& nombre) const
+	{
+		if (cola == nullptr) {
 			return false;
 		}
+
+		NodoLocutor* cabeza = getCabeza();
+		NodoLocutor* actual = cabeza;
+
+		do {
+
+			if (actual->nombre == nombre) {
+				return true;
+			}
+
+			actual = actual->siguiente;
+
+		} while (actual != cabeza);
+
+		return false;
 	}
 
 	int RotacionCircular::obtenerPosicion(const string& nombre) const {
