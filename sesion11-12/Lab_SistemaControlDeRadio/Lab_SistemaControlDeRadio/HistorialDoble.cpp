@@ -36,13 +36,14 @@ namespace EIF201 {
 
     void HistorialDoble::insertarAlFinal(const string& cancion) {
         NodoHistorial* nuevo = new NodoHistorial(cancion);
+
         if (cola == nullptr) {
             cabeza = nuevo;
             cola = nuevo;
         }
         else {
-            nuevo->siguiente = cola;
             cola->siguiente = nuevo;
+            nuevo->anterior = cola;
             cola = nuevo;
         }
 

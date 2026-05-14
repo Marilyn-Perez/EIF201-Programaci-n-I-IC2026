@@ -55,7 +55,6 @@ namespace EIF201 {
 	}
 
 	bool RotacionCircular::insertarDespuesDe(const string& referencia, const string& nuevo_nombre) {
-
 		if (cola == nullptr) {
 			return false;
 		}

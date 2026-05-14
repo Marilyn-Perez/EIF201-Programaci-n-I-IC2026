@@ -29,7 +29,7 @@ int main() {
         cout << "Pos desde final pop7:" << h.obtenerPosicionDesdeElFinal("pop7") << endl;
 
         // Eliminacion
-        h.eliminarPrimera("bosal1");
+        h.eliminarPrimera("bosa1");
         h.eliminarCabeza();
         h.eliminarCola();
         h.eliminarEnPosicion(1);
