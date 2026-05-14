@@ -35,6 +35,9 @@ namespace EIF201 {
 
 		bool estaVacia() const;
 		int getCantidad() const;
+
+		void imprimirEstadisticas() const;
+		std::string locutorMasActivo() const;
 	};
 
 }
